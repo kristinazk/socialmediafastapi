@@ -11,8 +11,6 @@ models.Base.metadata.create_all(bind=engine)
 # creating an instance of FastAPI
 app = FastAPI()
 
-origins = []
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], # domains allowed to talk to our API
